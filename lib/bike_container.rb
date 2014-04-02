@@ -26,6 +26,8 @@ module BikeContainer
 
   def release(bike)
     bikes.delete(bike)
+    raise "There is no bike" if Bike.new == nil
+    raise "There is no argument" if !bike 
   end
 
   def full?

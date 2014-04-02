@@ -1,4 +1,4 @@
-require_relative "../lib/garage"
+require './lib/garage'
 
 describe Garage do 
   let(:bike) {Bike.new}
